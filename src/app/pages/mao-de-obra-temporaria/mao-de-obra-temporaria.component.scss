@@ -5,7 +5,7 @@
   padding: 8rem 0;
   width: 100%;
   height: 600px;
-  background-image: url("../../../assets/Depositphotos_6970978_ds-scaled.jpg");
+  background-image: url("../../../assets/mulher-caixa.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,30 +76,32 @@
         line-height: 1.2em;
       }
     }
-    form {
+    .text {
       display: flex;
       flex-direction: column;
-      padding-right: 20px;
-      .item-form {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        label {
-          font-size: 12px;
-          margin-bottom: 10px;
-        }
-        input {
-          width: 100%;
-          height: 50px;
-        }
+      gap: 30px;
+      padding-right: 30px;
+      p {
+        color: #5d5d5d;
+        font-family: "Rubik", Sans-serif;
+        font-size: 16px;
+        font-weight: 400;
       }
       button {
-        background-color: #5b89bf;
+        font-family: "Roboto", Sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        fill: #ffffff;
         color: #ffffff;
-        width: 100%;
-        padding: 10px;
-        border: none;
+        background-color: #8e8f8e;
         border-radius: 5px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4ce04c;
       }
     }
   }
@@ -115,54 +117,20 @@
 
 .sub-title {
   width: 100%;
+  padding: 80px 0px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  h2 {
-    color: #000000;
-    font-family: "Rubik", Sans-serif;
-    font-size: 32px;
-    font-weight: 200;
-    text-transform: uppercase;
-    line-height: 1.2em;
+  h1 {
+    color: #202020;
+    font-family: "Roboto", Sans-serif;
+    font-size: 35px;
+    font-weight: 500;
   }
 }
-.container-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  .item-grid {
-    width: 100%;
-    height: 100%;
-    background-color: #5b89bf;
-    padding: 30px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: #fff;
-    .icon span{
-      font-size: 50px;
-    }
-    h3{
-      font-size: 19px;
-      font-weight: inherit;
-    }
-    p{
-      font-size: 14px;
-      font-weight: inherit;
-    }
-  }
-}
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 48
-}
+
 @media (max-width: 1000px) {
   .items-content .item-container.reverse {
     flex-flow: column;
@@ -185,23 +153,5 @@
         height: 100%;
       }
     }
-  }
-}
-
-@media (max-width: 900px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-
-  }
-}
-
-@media (max-width: 500px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-
   }
 }

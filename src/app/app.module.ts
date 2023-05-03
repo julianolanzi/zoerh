@@ -8,12 +8,8 @@ import { WebModule } from './layouts/web/web.module';
 import { ComponentsModule } from './components/components.module';
 import { RouterModule } from '@angular/router';
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    WebComponent
-  ],
+  declarations: [AppComponent, WebComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +18,6 @@ import { RouterModule } from '@angular/router';
     ComponentsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
