@@ -1,1 +1,170 @@
-<p>home works!</p>
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide>
+    <div class="slide1">
+      <div class="overlay">.</div>
+      <div class="slide-content">
+        <h1>PENSOU EM CONTRATAR ?</h1>
+        <p> Nós temos as melhores opções de contratações</p>
+        <p>e os profissionais que sua empresa procura! </p>
+        <button>Saiba mais</button>
+
+      </div>
+    </div>
+  </ng-template>
+  <ng-template carouselSlide>
+    <div class="slide2">
+      <video controls playsinline muted poster="cake.jpg">
+        <source src="./assets/video.mp4" type="video/webm">
+      </video>
+    </div>
+  </ng-template>
+  <ng-template carouselSlide>
+    <div class="slide3">
+      <div class="overlay">.</div>
+      <div class="slide-content">
+        <h1>BUSCANDO MELHORIAS PARA SUA EMPRESA?</h1>
+        <h1>NÓS TEMOS A SOLUÇÃO.</h1>
+        <p> Através de métodos eficazes, e uma equipe especializada, encontramos o profissional</p>
+        <p> que sua empresa precisa de forma rápida e objetiva. </p>
+
+      </div>
+    </div>
+  </ng-template>
+</owl-carousel-o>
+
+<section class="container">
+  <section class="servicos">
+
+    <div class="title">Conheça a Zoe RH</div>
+    <p>Conheça um pouco mais sobre nossa empresa.
+    </p>
+
+    <div class="cards">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <span class="material-symbols-outlined">
+              handshake
+            </span>
+            <h2>Nossa missão</h2>
+          </div>
+          <div class="flip-box-back">
+            <div class="text">
+              <p>A ZOE RH tem como missão transformar suas habilidades em pontes concretas para seu desempenho
+                profissional, muito mais do que te recolocar no mercado de trabalho, temos o papel de promover a
+                credibilidade que seu currículo merece</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <span class="material-symbols-outlined">
+              star
+            </span>
+            <h2>Nossa visão</h2>
+          </div>
+          <div class="flip-box-back">
+            <div class="text">
+              <p>Temos como visão aumentar o nível de empregabilidade dos candidatos que confiam nela, com uma equipe
+                preparada e uma estrutura embasada em anos de experiência nossa função é, de uma forma assertiva trazer
+                a
+                satisfação desejada de ambos os lados dessa ponte, você e conceituadas empresas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <span class="material-symbols-outlined">
+              diamond
+            </span>
+            <h2>Nossos Valores</h2>
+          </div>
+          <div class="flip-box-back">
+            <div class="text">
+              <p>Valorizamos acima de tudo o ser humano, como uma empresa de Recursos humanos, extraímos dessa fonte
+                preciosa, todas as riquezas para alcançarmos o objetivo final, que é o de criar oportunidades,
+                estabelecer
+                parcerias de sucesso e gerar Zoe (vida) onde estivermos presente!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="accordion">
+  <cdk-accordion class="example-accordion">
+    <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
+      class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+      [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+      <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+        <span class="example-accordion-item-description material-symbols-outlined">
+          {{ accordionItem.expanded ? 'expand_more' : 'chevron_right' }} </span>
+        {{ item.title }}
+
+      </div>
+      <div class="example-accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
+        [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
+        {{ item.text }}
+      </div>
+    </cdk-accordion-item>
+  </cdk-accordion>
+</section>
+
+<section class="services">
+
+  <div class="title">Nossos Serviços
+  </div>
+  <p>Nosso comprometimento com o cliente é realizar seus serviços com qualidade e excelência por meio de um trabalho
+    ágil e eficiente.
+  </p>
+
+  <div class="cards-service-container">
+    <div class="card-service">
+      <div class="card-icon">
+        <span class="material-symbols-outlined">
+          description
+        </span>
+      </div>
+      <div class="card-content">
+        <div class="title">Recrutamento & Seleção</div>
+        <p>Com uma equipe altamente qualificada, fazemos todo o processo seletivo de sua vaga, com técnicas e avaliações
+          por meio de entrevistas especializadas, alinhados a cultura organizacional de sua empresa, e assim atingindo
+          maior assertividade na contratação.</p>
+        <button>SABER MAIS</button>
+      </div>
+    </div>
+    <div class="card-service">
+      <div class="card-icon">
+        <span class="material-symbols-outlined">
+          schedule
+        </span>
+      </div>
+      <div class="card-content">
+        <div class="title">
+          Temporário - Redução de custos, sem preocupações com administração de pessoal</div>
+        <p>A mão de obra temporária é ideal para quem deseja reduzir custos, agilizar procedimentos com admissão e ainda
+          poupar sua equipe interna de administrar funcionários.</p>
+        <button>SABER MAIS</button>
+      </div>
+    </div>
+    <div class="card-service">
+      <div class="card-icon">
+        <span class="material-symbols-outlined">
+          badge
+        </span>
+      </div>
+      <div class="card-content">
+        <div class="title">Avaliação Psicológica</div>
+        <p>Por meio de testes e avaliações psicológicas, é possível identificar determinadas características dos
+          candidatos, assim como mensurar fatores indispensáveis para determinadas funções, tais como traços de
+          personalidade, agilidade e concentração.</p>
+        <button>SABER MAIS</button>
+      </div>
+    </div>
+  </div>
+</section>

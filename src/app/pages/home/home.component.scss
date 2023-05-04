@@ -1,0 +1,363 @@
+.slide1 {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../../assets/banner-1.jpg");
+  background-size: cover;
+
+  .overlay {
+    height: 80vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(#232323 100%, rgba(242, 41, 91, 0) 100%);
+    opacity: 0.6;
+    z-index: 0;
+  }
+
+  .slide-content {
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+
+    h1 {
+      font-family: "Roboto", Sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+    p {
+      color: #fff;
+    }
+    button {
+      font-family: "Roboto", Sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 10px;
+      color: #000000;
+      background-color: #ffffff;
+      border: none;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.slide2 {
+  video {
+    width: 100%;
+    height: 80vh;
+    background-color: #232323;
+    object-fit: cover;
+    position: absolute;
+  }
+}
+.slide3 {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../../assets/banner-3.jpg");
+  background-size: cover;
+
+  .overlay {
+    height: 80vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(#232323 100%, rgba(242, 41, 91, 0) 100%);
+    opacity: 0.6;
+    z-index: 0;
+  }
+
+  .slide-content {
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+
+    h1 {
+      font-family: "Roboto", Sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    p {
+      color: #fff;
+    }
+    button {
+      font-family: "Roboto", Sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 10px;
+      color: #000000;
+      background-color: #ffffff;
+      border: none;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  }
+}
+.container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.servicos {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  .title {
+    color: #202020;
+    font-family: "Roboto", Sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  p {
+    margin-top: 15px;
+    color: rgb(122, 122, 122);
+  }
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  gap: 20px;
+}
+.flip-box {
+  background-color: transparent;
+  width: 33%;
+  height: 350px;
+  border-radius: 5px;
+
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #5b89bf;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  span {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: #ffffff;
+    font-family: "Roboto", Sans-serif;
+    font-size: 23px;
+    font-weight: initial;
+    text-transform: uppercase;
+  }
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #94ef99;
+  color: black;
+  transform: rotateY(180deg);
+  padding: 30px;
+  align-items: center;
+  /* position: relative; */
+  display: flex;
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.accordion {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.example-accordion {
+  display: block;
+  width: 100%;
+}
+
+.example-accordion-item {
+  display: block;
+  border: solid 1px #ccc;
+}
+
+.example-accordion-item + .example-accordion-item {
+  border-top: none;
+}
+
+.example-accordion-item-header {
+  display: flex;
+  align-content: center;
+  gap: 10px;
+}
+
+.example-accordion-item-description {
+  font-size: 0.85em;
+  color: #000;
+}
+
+.example-accordion-item-header,
+.example-accordion-item-body {
+  padding: 20px;
+}
+
+.example-accordion-item-header:hover {
+  cursor: pointer;
+  background-color: #5b89bf;
+  color: #fff;
+}
+
+.example-accordion-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.example-accordion-item:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.services {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  .title {
+    color: #202020;
+    font-family: "Roboto", Sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  p {
+    margin-top: 15px;
+    color: rgb(122, 122, 122);
+    width: 80%;
+  }
+
+  .cards-service-container {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 15px;
+
+    .card-service {
+      width: 33%;
+      height: auto;
+      display: flex;
+      .card-icon {
+        span {
+          font-size: 50px;
+          color: #5b89bf;
+        }
+      }
+
+      .card-content {
+        .title {
+          color: #5b89bf;
+          font-family: "Roboto", Sans-serif;
+          font-size: 21px;
+          font-weight: 600;
+        }
+        p {
+          color: #555454;
+          font-family: "Roboto", Sans-serif;
+          font-size: 17px;
+          font-weight: 400;
+        }
+        button {
+          font-family: "Roboto", Sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+          fill: #ffffff;
+          color: #ffffff;
+          background-color: #5b89bf;
+          border: none;
+          padding: 10px;
+          width: 100%;
+          margin-top: 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+    gap: 20px;
+  }
+  .cards-service-container {
+    flex-direction: column;
+    gap: 15px;
+    .card-service {
+      width: 100%!important;
+    }
+  }
+  .flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+}

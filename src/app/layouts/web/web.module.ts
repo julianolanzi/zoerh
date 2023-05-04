@@ -9,7 +9,9 @@ import { NossaHistoriaComponent } from 'src/app/pages/nossa-historia/nossa-histo
 import { RecrutamentoESelecaoComponent } from 'src/app/pages/recrutamento-e-selecao/recrutamento-e-selecao.component';
 import { MaoDeObraTemporariaComponent } from 'src/app/pages/mao-de-obra-temporaria/mao-de-obra-temporaria.component';
 import { AvaliacaoPsicologicaComponent } from 'src/app/pages/avaliacao-psicologica/avaliacao-psicologica.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MatAccordion, MatExpansionModule } from '@angular/material/expansion';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -20,6 +22,13 @@ import { AvaliacaoPsicologicaComponent } from 'src/app/pages/avaliacao-psicologi
     MaoDeObraTemporariaComponent,
     AvaliacaoPsicologicaComponent,
   ],
-  imports: [CommonModule, RouterModule.forChild(WebRoutes)],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(WebRoutes),
+    CarouselModule,
+    MatExpansionModule,
+    CdkAccordionModule,
+
+  ],
 })
 export class WebModule {}

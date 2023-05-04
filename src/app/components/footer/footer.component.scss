@@ -95,6 +95,9 @@
         .item-3 {
           width: 32%;
           height: 180px;
+          .title span{
+            color:#fff;
+          }
           .title a {
             display: flex;
             align-items: center;
@@ -159,7 +162,7 @@
         align-items: center;
         span {
           padding: 5px;
-          color: #ffffb5;
+          color: #fff;
           font-size: 25px;
         }
       }
