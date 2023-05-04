@@ -1,3 +1,4 @@
+import { PoliticaDePrivacidadeComponent } from './../../pages/politica-de-privacidade/politica-de-privacidade.component';
 import { AvaliacaoPsicologicaComponent } from 'src/app/pages/avaliacao-psicologica/avaliacao-psicologica.component';
 import { MaoDeObraTemporariaComponent } from './../../pages/mao-de-obra-temporaria/mao-de-obra-temporaria.component';
 import { RecrutamentoESelecaoComponent } from './../../pages/recrutamento-e-selecao/recrutamento-e-selecao.component';
@@ -9,6 +10,7 @@ import { HomeComponent } from 'src/app/pages/home/home.component';
 export const WebRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'nossa-historia', component: AboutComponent },
+  { path: 'politica-de-privacidade', component: PoliticaDePrivacidadeComponent },
   { path: 'recrutamento-e-selecao', component: RecrutamentoESelecaoComponent },
   { path: 'mao-de-obra-temporaria', component: MaoDeObraTemporariaComponent },
   { path: 'avaliacao-psicologica', component: AvaliacaoPsicologicaComponent },

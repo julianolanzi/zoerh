@@ -1,0 +1,38 @@
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    h1 {
+      color: #000000;
+      font-family: "Roboto", Sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 80px;
+    .sub-title {
+      padding: 10px 0px 10px 0px;
+      p {
+        color: #000000;
+        font-family: "Roboto", Sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+      }
+    }
+    .text p{
+      padding: 10px 0px 10px 0px;
+      color: #000000;
+      font-family: "Roboto", Sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
