@@ -15,6 +15,7 @@
 
 .social-media {
   width: 80%;
+  max-width: 1400px;
   margin: auto;
   height: 51px;
   display: flex;
@@ -66,7 +67,6 @@
   justify-content: center;
 
   .menu {
-    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +79,7 @@
     }
 
     nav ul {
+      gap: 10px;
       display: flex;
       list-style: none;
       text-transform: uppercase;
@@ -89,6 +90,7 @@
     }
     nav ul li a {
       color: #000;
+      padding: 10px;
     }
     nav ul li:hover {
       .sub-menu-container {
@@ -122,7 +124,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        padding: 10px;
+
         i {
           width: 20px;
           height: 20px;
@@ -142,7 +144,11 @@
     font-size: 12px;
   }
 }
-
+@media (max-width: 1100px) {
+  .nav-container .menu nav ul li a {
+    font-size: 10px;
+  }
+}
 @media (max-width: 1000px) {
   .social-media {
     justify-content: center;
@@ -229,8 +235,3 @@
     color: #fff;
   }
 }
-
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
