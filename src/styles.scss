@@ -135,6 +135,204 @@
   }
 }
 
+.blog-cover {
+  max-width: 100%;
+  min-height: 282px;
+  background-image: url("./assets/topo-blog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+    max-width: 1300px;
+    height: 282px;
+    margin: auto;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    h2 {
+      color: #ffffff;
+      font-family: "Helvetica Neue Medium", Sans-serif;
+      font-size: 60px;
+    }
+  }
+}
+.container-blog {
+  margin: auto;
+  background-color: #f6f6f6;
+  .title-content {
+    max-width: 1300px;
+    margin: auto;
+
+    p {
+      font-family: "Helvetica Neue Bold Italic", Sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 8px;
+      margin-left: 8px;
+      color: #cc3333;
+      padding-top: 60px;
+    }
+    h2 {
+      color: #222222;
+      font-family: "Helvetica Neue Bold Italic", Sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      padding-bottom: 130px;
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.container-content {
+  max-width: 1300px;
+  min-height: 282px;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+
+  .post {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.09);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s;
+    margin: -120px 0px 0px 0px;
+    padding: 40px 40px 40px 40px;
+    z-index: 10;
+    background-color: #fff;
+
+    .img {
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+    p {
+      line-height: 1.5;
+      margin: 0 0 1em em 0;
+      color: #222222;
+      font-family: "Helvetica Neue Medium", Sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+    }
+    .list {
+      ul {
+        margin: 0 0 3rem 3rem;
+        li {
+          line-height: 1.5;
+          margin: 0.5rem 0 0 2rem;
+          color: #222222;
+          font-family: "Helvetica Neue Medium", Sans-serif;
+          font-size: 19px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.relation {
+  padding: 0px 45px 40px 45px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    color: #5b89bf;
+    font-family: "Helvetica Neue Bold", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+
+    p {
+      color: #222222;
+      font-size: 15px;
+      font-weight: normal;
+    }
+  }
+
+  .social {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+
+    .facebook {
+      background-color: #3b5995;
+    }
+    .instagram {
+      background-color: #262626;
+    }
+    .linkedin {
+      background-color: #0577b2;
+    }
+    .youtube {
+      background-color: #cc2425;
+    }
+    .icon {
+      width: 36px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+      a {
+        display: flex;
+        img {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .last-post {
+    margin-top: 60px;
+    .title-last-post {
+      h2 {
+        color: #5b89bf;
+        font-family: "Helvetica Neue Bold", Sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+    .posts-relations {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      .post-item {
+        display: flex;
+        gap: 10px;
+        .post-img {
+          img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+          }
+        }
+        .text {
+          h1 {
+            color: #222222;
+            font-family: "Helvetica Neue Light", Sans-serif;
+            font-size: 17px;
+            line-height: normal;
+            margin: 0;
+          }
+          a {
+            color: #e40000;
+            font-family: "Helvetica Neue Medium", Sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1420px) {
   .social-media {
     justify-content: flex-end;
@@ -233,5 +431,10 @@
     padding: 5px;
     border-radius: 5px;
     color: #fff;
+  }
+
+  .container-content{
+    display: flex;
+    flex-direction: column;
   }
 }

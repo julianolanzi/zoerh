@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { WebModule } from './layouts/web/web.module';
 import { ComponentsModule } from './components/components.module';
 import { RouterModule } from '@angular/router';
-import { PoliticaDePrivacidadeComponent } from './pages/politica-de-privacidade/politica-de-privacidade.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [AppComponent, WebComponent],

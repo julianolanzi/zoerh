@@ -1,3 +1,7 @@
+import { EntrevistasOnlineComponent } from './../../pages/entrevistas-online/entrevistas-online.component';
+import { DicasEntrevistasComponent } from './../../pages/dicas-entrevistas/dicas-entrevistas.component';
+import { AutogerenciamentoComponent } from './../../pages/autogerenciamento/autogerenciamento.component';
+import { CarteiraDeTrabalhoComponent } from './../../pages/carteira-de-trabalho/carteira-de-trabalho.component';
 import { PoliticaDePrivacidadeComponent } from './../../pages/politica-de-privacidade/politica-de-privacidade.component';
 import { AvaliacaoPsicologicaComponent } from 'src/app/pages/avaliacao-psicologica/avaliacao-psicologica.component';
 import { MaoDeObraTemporariaComponent } from './../../pages/mao-de-obra-temporaria/mao-de-obra-temporaria.component';
@@ -15,4 +19,8 @@ export const WebRoutes: Routes = [
   { path: 'mao-de-obra-temporaria', component: MaoDeObraTemporariaComponent },
   { path: 'avaliacao-psicologica', component: AvaliacaoPsicologicaComponent },
   { path: 'contato', component: ContactComponent },
+  { path: 'carteira-de-trabalho', component: CarteiraDeTrabalhoComponent },
+  { path: 'autogerenciamento', component: AutogerenciamentoComponent },
+  { path: 'dicas', component: DicasEntrevistasComponent },
+  { path: 'entrevistas', component: EntrevistasOnlineComponent },
 ];

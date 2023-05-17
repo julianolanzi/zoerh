@@ -12,6 +12,10 @@ import { AvaliacaoPsicologicaComponent } from 'src/app/pages/avaliacao-psicologi
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MatAccordion, MatExpansionModule } from '@angular/material/expansion';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { CarteiraDeTrabalhoComponent } from 'src/app/pages/carteira-de-trabalho/carteira-de-trabalho.component';
+import { EntrevistasOnlineComponent } from 'src/app/pages/entrevistas-online/entrevistas-online.component';
+import { AutogerenciamentoComponent } from 'src/app/pages/autogerenciamento/autogerenciamento.component';
+import { DicasEntrevistasComponent } from 'src/app/pages/dicas-entrevistas/dicas-entrevistas.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -21,6 +25,10 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     RecrutamentoESelecaoComponent,
     MaoDeObraTemporariaComponent,
     AvaliacaoPsicologicaComponent,
+    CarteiraDeTrabalhoComponent,
+    EntrevistasOnlineComponent,
+    AutogerenciamentoComponent,
+    DicasEntrevistasComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +36,6 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     CarouselModule,
     MatExpansionModule,
     CdkAccordionModule,
-
   ],
 })
 export class WebModule {}
